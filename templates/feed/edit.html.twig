@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit{% endblock %}
+ 
+{% block body %}
+<a class="btn btn-dark" href="{{ path('app_homepage') }}">Go to Homepage</a>
+<a class="btn btn-dark" href="{{ path('feed') }}">Go back to the Feed</a>
+<div class="container">
+    
+    <h1>Edit the post</h1>
+    <div class="form-container">     
+            <div class="form">
+                
+                {{ form_start(form) }}
+                
+                {{ form_row(form.title,{"attr":{"class":"form-control","data-id":"12354"}}) }}
+                {{ form_row(form.description,{"attr":{"class":"form-control","data-id":"12354"}}) }}
+                {{ form_row(form.categories) }} 
+               
+                <ul class="images"   data-prototype="{{ form_row(form.image.vars.prototype)|e('html_attr') }}">
+                {{ form_label(form.image) }}
+                {% for uploadImage in form.image %}
+                        <li>
+                        {{ form_errors(uploadImage) }}
+                        {{ form_row(uploadImage) }}
+                        </li>
+                {% endfor %}
+                </ul>
+                 {% for oneImage in images %}
+                    <img src="{{ asset('img/' ~ oneImage.filename)|imagine_filter('squared_thumbnail_small') }}"  />
+                {% endfor %}
+
+                <input type="submit" class="btn btn-primary btn-edit" value="edit"/>
+
+            {{ form_end(form) }}
+              
+            </div>
+    </div>
+</div>
+
+
+{% endblock %}

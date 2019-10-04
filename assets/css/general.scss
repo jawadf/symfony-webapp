@@ -1,0 +1,48 @@
+
+// BASE
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem=10px; 10px/16px= 62.5%
+}
+
+body {
+  box-sizing: border-box;
+}
+
+// TYPOGRAPHY
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h3 {
+  font-family: 'Pattaya', sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+.paragraph-medium {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+// LAYOUT
+
+.row {
+  max-width: 112rem;
+  margin: 0 auto;
+}

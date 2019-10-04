@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Feed{% endblock %}
+ 
+{% block body %}
+<a class="btn btn-dark" href="{{ path('app_homepage') }}">Go to Homepage</a>
+<a class="btn btn-dark" href="{{ path('feed') }}">Go back to the Feed</a>
+<div class="container">
+    
+    <h1>Are you sure you want to delete?</h1>
+    <div class="form-container">      
+        <div class="form">
+
+            {{ form_start(form) }}
+  {{ form_widget(form) }}
+              {{ form_end(form) }}
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,104 @@
+// FEED 
+
+ .hero {
+    
+    padding: 12rem 0;
+  
+  
+    &__heading {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  
+    &__paragraph {
+      width: 70rem;
+      margin: 0 auto; 
+      text-align: center;
+    }
+  
+    
+  }
+  
+  .hr {
+    width: 50rem;
+    height: .5px;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.274);
+    
+  }
+  
+  .feed {
+    padding: 12rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .quiz-element {
+    background-color: rgb(239, 255, 151);
+    width: 32rem;
+    height: 29rem;
+    border-radius: 1rem;
+    margin-bottom: 4.5rem;
+    text-align: center;
+    padding: 3rem 3.5rem;
+    position: relative;
+  
+    &__title {
+      margin-bottom: 1rem;
+    }
+  
+    &__description {
+      font-size: 1.25rem;
+    }
+  
+    &__button {
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0 auto;
+  
+    }
+  }
+
+.post__image {
+
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+
+
+
+  // FORM - To Extract
+
+  /*
+  .form {
+      width: 45rem;
+      display: block;
+      margin: 3rem auto;
+    
+    
+    li {
+        list-style: none;
+    }
+
+    input {
+        margin: 1rem 0;
+    }
+
+    input[type=text] {
+       display: inline-block;
+       padding: .8rem 1rem;
+       border-radius: 3px;
+       border: 1px solid rgb(143, 143, 143);
+    }
+
+
+  } */
+
+
+  

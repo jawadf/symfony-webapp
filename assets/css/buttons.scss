@@ -1,0 +1,39 @@
+
+.btn {
+    padding: 1rem 2rem;
+    border: 2px solid currentColor;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  
+   
+  }
+  
+  .btn-outline {
+    background-color: #fff;
+    color: #000;
+    transition: color .2s;
+  
+    &:hover {
+      color:rgb(214, 159, 159);
+    }
+  }
+  
+  .btn-black {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+    transition: all .2s;
+  
+    &:hover {
+      color:rgb(207, 160, 160);
+    }
+  }

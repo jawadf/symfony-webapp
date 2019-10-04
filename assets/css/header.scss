@@ -1,0 +1,12 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(231, 253, 253, 0.507);
+    height: 12rem;
+  
+    &__button {
+      margin-right:1.3rem;
+    }
+    
+  }
